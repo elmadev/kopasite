@@ -1,0 +1,16 @@
+Punishing Model
+
+Replay sent to late:
+Up to 1 hour: + 0,25 sec.
+Up to 2 hours: + 0,50 sec.
+More than 2 hours + 1 sec.
+
+Wrong Replay:
+Different level: Disqualified
+Replay is not there: Disqualified
+Replay is with a worse time: You will get the replay's time + 0,50 sec.
+Replay is with a better time: You will get the written time, but atleast 0,50 worse than the replay time.
+
+If the replay is named wrong: + 0,50 sec.
+
+Other punishings might happen.

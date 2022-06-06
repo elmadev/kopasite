@@ -1,0 +1,13 @@
+RewriteEngine on
+RewriteRule ^ajax - [L]
+RewriteRule ^inc - [L]
+RewriteRule ^dl - [L]
+RewriteRule ^appdl - [L]
+RewriteRule ^stuff - [L]
+RewriteRule ^convert - [L] 
+RewriteRule ^download/Legends.of.Kopasite.2011.1080p.x264-Kopasite.m2ts - [L]
+RewriteRule ^download/umiz.levels.done.quick.by.Jeppe.2011.1080p.x264-Kopasite.mp4 - [L]
+RewriteRule ^getRecAPI.php - [L]
+RewriteRule ^rss.php - [L]
+RewriteRule ^up inc/dlfile.php [QSA,L]
+RewriteRule !\.(js|ico|txt|gif|jpg|png|css)$ index.php

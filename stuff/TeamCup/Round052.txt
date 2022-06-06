@@ -1,0 +1,5 @@
+LEVEL 2:
+
+MJXII       [ICE]   20,40        50p
+KickZ       [TAH]   28,77        35p
+theBLIND    [HHIT]  13 apples    25p
