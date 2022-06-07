@@ -202,7 +202,7 @@ if($t != ""){
 	if(isset($success)){
 		?>
 		<script>
-		function SelectText(element) {
+		/* function SelectText(element) {
 		    var doc = document;
 		    var text = doc.getElementById(element);
 		    if (doc.body.createTextRange) {
@@ -217,7 +217,7 @@ if($t != ""){
 		        selection.addRange(range);
 		    }
 		}
-		SelectText('selectme');
+		SelectText('selectme'); */
 		</script>
 		<?php
 	}

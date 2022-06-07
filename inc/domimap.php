@@ -1,4 +1,4 @@
-<?
+<?php
 include("../../kopasitedb.php");
 include("../functions.php");
 $lev = hax($_GET['lev']);

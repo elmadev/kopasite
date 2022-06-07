@@ -10,7 +10,7 @@ class Logging{
 		if(isset($GLOBALS['ki'])){
 			$logki = $GLOBALS['ki'];
 		}else{
-			$logki = NULL;
+			$logki = 0;
 		}
 		$datetime = date("Y-m-d H:i:s");
 		$date = date("Y-m-d");

@@ -1,13 +1,13 @@
 <?php
 session_start();
-error_reporting(E_ERROR | E_WARNING | E_PARSE);
+// error_reporting(E_ERROR | E_WARNING | E_PARSE);
 include "kopasitedb.php";
 include "functions.php";
 include "login.php";
 include "route.php";
 ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 <head>
 <title>Kopasite|</title>
 <link href="/css/style.css" rel="stylesheet" type="text/css"/>
@@ -171,7 +171,7 @@ include("inc/vars.php");
 						$("#selusers").hide("fast");
 
 					});
-					function SelectText(element) {
+					/*function SelectText(element) {
 					    var doc = document;
 					    var text = doc.getElementById(element);
 					    if (doc.body.createTextRange) {
@@ -186,7 +186,7 @@ include("inc/vars.php");
 					        selection.addRange(range);
 					    }
 					}
-					SelectText('selectme');
+					SelectText('selectme');*/
 					/*setInterval(function() {
 						if( $("#notifi").is(":hidden") ) {
 							$('#notifi').load('/ajax/notification.php');
