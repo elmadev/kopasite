@@ -1,0 +1,189 @@
+================================================================================
+
+                     ElastoMania 1.11h beta (based on 1.11a)
+
+                             http://www.acrossdk.tk
+                        http://acrossdk.mine.nu/acrossdk
+
+              WARNING: This is not an official patch. It's a hack.
+
+================================================================================
+
+
+Installation
+------------
+
+   Copy elma.exe into your elastomania directory (you might want to backup/rename the old exe).
+
+
+New features
+------------
+
+   - Lev-packs.
+   - Fast search in menus.
+   - Merging replays.
+   - Alovolt key.
+   - Brake alias key.
+   - Esc alias key.
+   - VCR-style controls when watching replays.
+  (- some bugs fixed)
+
+  Lev-packs
+  ---------
+
+   Lev-packs are used to group levels and make stats (as with internal levels).
+   Each lev-pack contains the following information:
+     - Name: Self-explanatory.
+     - Pattern: A filename pattern to find the files. For example: "0lp??" matches "0lp01.lev", "0lp02.lev" etc. "0lp*" matches "0lp01.lev", "0lp2.lev", "0lpowa.lev", etc.
+     - Stats filename: The file where the stats should be saved. For example: "0lpStats.txt" or "stats\0lp.txt".
+
+   To play the levs of a lev-pack, you can go under "Lev-Packs" in the main menu.
+   If you don't want the stats to be saved for a pack, just use an empty stats filename.
+   To add/remove/edit lev-packs, use elmaconf.exe.
+
+   The number of packs is limited to 64.
+   Each pack should have a maximum of 256 levs, otherwise the stats will ignore some of them.
+   In the stats, only 64 players can have their total time calculated. If there are more, they will be ignored (but not in the anonymous total time).
+   Calculating the stats for many levs can be slow because of the numerous files to read. Those stats are calculated before the "Thank you for registering" message. So there might be a delay.
+   Warning: if you use the maximum number of levs, you get 64*256 = 16384 levs to access each time you close elma. It would take a while!
+
+
+  Fast search in menus
+  --------------------
+
+   You can now press "Left Control + Left Arrow" or "Left Control + Right Arrow" to go to the end or the begining of the list.
+   If the list is ordered you can also press any alphanumeric key to jump to the first item which begins with that letter.
+   If you don't want the alphanumeric keys to be always enabled, use elmaconf.exe to make "Left Control" required. In that case "Left Control + A" will work, but not "A" alone.
+
+
+  Merging replays
+  ---------------
+
+   This feature allows you to compare two replays by merging them into a multiplayer replay.
+   "Merge Replays" is available from the main menu (instead of "Demo").
+   The merged replay is saved as ".rec" which is shown as a blank line in the replay list.
+   If you select replays for two different levels, elma might crash.
+
+
+  AloVolt key
+  -----------
+
+   This feature allows you to select a key which will simulate two other keystrokes.
+   For example, you press "A" and the game understands that you pressed "B" and "C" (and "A").
+   It works only when you are playing (not in the menus).
+   Each player has his own AloVolt key (for multiplayer mode).
+
+   Use elmaconf.exe to configure the AloVolt key.
+
+   "What is AloVolt?"
+   ElastoMania has a "special move" which is done by pressing both "Left" and "Right" simultaneously: the SuperVolt.
+   Because pressing them simultaneously is very hard to do, you usually first have to use a normal volt and keep the keys pressed until you make the SuperVolt.
+   AloVolt ((c) Mick & ciph) stands for Alone SuperVolt, which means making an instant SuperVolt without the preceding normal volt.
+
+
+  Brake alias key
+  ---------------
+
+   This feature allows you to select a key which will simulate another keystroke.
+   For example, you press "A" and the game understands that you pressed "B" (and "A").
+   This was made for braking, because braking with two different keys might be useful for sick hoylas (ask Karlis why).
+   But you can use it for any key.
+   It works only when you are playing (not in the menus).
+   Each player has his own alias key (for multiplayer mode).
+
+   Use elmaconf.exe to configure the Brake alias key.
+
+
+  Esc alias key
+  -------------
+
+   This feature allows you to select a secondary key for "Esc".
+   It works only when you are playing (not in the menus).
+   Ask dz what it is for.
+
+   Use elmaconf.exe to configure the Esc alias key.
+
+
+  VCR-style controls for replays
+  ------------------------------
+
+   There are 5 function:
+     - Fast Motion (x2, 4x or 8x faster).
+     - Slow motion (x2 or 4x slower).
+     - Backward. You can press this one simultaneously with Fast or Slow Motion.
+     - Pause.
+
+   The default keys are:
+     - Up     Fast forward
+     - Right  Ultra fast forward
+     - Down   Slow motion
+     - Left   Backward
+     - Space  Pause
+
+   Choose the keys with elmaconf.exe.
+
+
+Does it really work without any new bug?
+----------------------------------------
+
+   It is 100% safe when you play and i can prove it.
+   When you use the new replay functions i'd say it's only 99% safe.
+   Old elma bugs remain present, of course.
+
+
+Known problems
+--------------
+
+  Watching replays
+  ----------------
+   The backward replay function doesn't exactly work as you would expect:
+   When you turn back, the camera travelling is disabled. This means the camera is instantly translated.
+   The kuski animation is disabled too.
+   Events are only triggered once. Events are: Catching an apple, moving the arms and some sounds.
+   Gravity apples may cause camera bugs.
+
+
+  Merging replays
+  ---------------
+   Merging replays should be 90% safe. The most important I/O exceptions are "handled".
+   (According to tests it is safe when merging replays played on the same level)
+
+
+  Lev-packs stats
+  ----------------
+   This part was directly coded in ASM, and it is 600+ instructions long. So there might be bugs due to stupid little mistakes.
+   But it is supposed to handle all the exceptions and should be 99% safe.
+   If elma quits without showing "Thank you for registering" or "Internal Error", that means it got a fatal error. In that case, please email your bug report to: bob.ricard6@caramail.com
+
+
+  Playing (with AloVolt)
+  ----------------------
+   Playing is 100% safe.
+
+
+
+Example lev-packs
+-----------------
+
+  I have included several lev-packs. But you still need to download the levs.
+
+  - Alternative Level Pack (ALP): http://www.grafopoint.com
+    note: ALP is the best pack i've ever played. I recommend it for the best players and also the average ones.
+
+  - Official Level Pack (OLP): http://www.moposite.com
+
+  - OldSchool internals: http://www.acrossdk.tk
+
+  - Action SuperCross 1.x: http://www.acrossdk.tk
+    note: i made this pack by extracting/converting the levs directly from Across (Elma's brother).
+
+  - Lost Internals: http://www.moposite.com
+
+  - World Cups: http://www.moposite.com
+
+
+Contact
+-------
+
+  The last version of elma1.11h (beta) can be found there: http://www.acrossdk.tk or http://acrossdk.mine.nu/acrossdk
+  And you can email me (Hibernatus) there: bob.ricard6@caramail.com
