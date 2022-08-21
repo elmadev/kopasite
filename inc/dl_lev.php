@@ -1,5 +1,5 @@
 <?php
-include("../../kopasitedb.php"); 
+include("../kopasitedb.php"); 
 include("../functions.php");
 $levid = hax($_GET["lev"]);
 $result = mysql_query("SELECT LevelIndex, LevelData, LevelName FROM level WHERE LevelIndex = '$levid'") or die(mysql_error());

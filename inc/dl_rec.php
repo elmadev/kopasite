@@ -1,5 +1,5 @@
 <?php
-include("../../kopasitedb.php"); 
+include("../kopasitedb.php"); 
 include("../functions.php");
 include("../login.php");
 $recid = hax($_GET["rec"]);

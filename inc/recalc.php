@@ -1,5 +1,5 @@
 <?php
-include("/home/kopaka/kopasitedb.php");
+include("../kopasitedb.php");
 
 $points = array(1 => 40, 2 => 30, 3 => 25, 4 => 22, 5 => 20, 6 => 18, 7 => 16, 8 => 14, 9 => 12, 10 => 11, 11 => 10, 12 => 9, 13 => 8, 14 => 7, 15 => 6, 16 => 5, 17 => 4, 18 => 3, 19 => 2, 20 => 1);
 //$result = mysql_query("SELECT * FROM updateschedule");
