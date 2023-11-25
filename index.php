@@ -265,10 +265,11 @@ include("inc/vars.php");
 					<p class="head pad">Level Packs</p><br/><br/>
                     <a href="<?php echo $url; ?>/records/kinglist/Kopaka/" class="red size11 bold pad">Kopaka levels</a><br/>
 					<img src="/images/rp_but.gif" width="4" height="6" alt="" class="rp_but"/><a href="/records/pack/TKT/" class="rp_buttxt2">TKT ep I</a>&nbsp;
-            <img src="/images/rp_but.gif" width="4" height="6" alt="" class=""/>&nbsp;<a href="<?php echo $url; ?>/records/pack/TKTII/" class="rp_buttxt" >TKT ep II</a><br/>
-				<img src="/images/rp_but.gif" width="4" height="6" alt="" class="rp_but"/><a href="/records/pack/DCup03/" class="rp_buttxt2">Dragstrup Cup 2003</a><br/>
-				<img src="/images/rp_but.gif" width="4" height="6" alt="" class="rp_but"/><a href="/records/pack/C1337/" class="rp_buttxt2">1337 Contest</a><br/>
-				<img src="/images/rp_but.gif" width="4" height="6" alt="" class="rp_but"/><a href="/records/pack/cEp/" class="rp_buttxt2">cEp levels</a>
+            		<img src="/images/rp_but.gif" width="4" height="6" alt="" class=""/>&nbsp;<a href="<?php echo $url; ?>/records/pack/TKTII/" class="rp_buttxt" >TKT ep II</a>&nbsp;
+            		<img src="/images/rp_but.gif" width="4" height="6" alt="" class=""/>&nbsp;<a href="https://elma.online/levels/packs/TKTIII" class="rp_buttxt" >TKT ep III</a><br/>
+					<img src="/images/rp_but.gif" width="4" height="6" alt="" class="rp_but"/><a href="/records/pack/DCup03/" class="rp_buttxt2">Dragstrup Cup 2003</a><br/>
+					<img src="/images/rp_but.gif" width="4" height="6" alt="" class="rp_but"/><a href="/records/pack/C1337/" class="rp_buttxt2">1337 Contest</a><br/>
+					<img src="/images/rp_but.gif" width="4" height="6" alt="" class="rp_but"/><a href="/records/pack/cEp/" class="rp_buttxt2">cEp levels</a>
 				</div>
 			</div>
 			<div class="tp_middlebg"></div>  	 
@@ -408,7 +409,8 @@ include("inc/vars.php");
 			<a href="<?php echo $url; ?>/records/kinglist/" class="black head pad">Level Packs</a><br/><br/>
 			<a href="<?php echo $url; ?>/records/kinglist/Kopaka/" class="red size11 bold pad">Kopaka levels</a><br/>
 			<img src="/images/rp_but.gif" width="4" height="6" alt="" class="rp_but"/><a href="<?php echo $url; ?>/records/pack/TKT/" class="rp_buttxt2">TKT ep I</a>&nbsp;
-            <img src="/images/rp_but.gif" width="4" height="6" alt="" class=""/>&nbsp;<a href="<?php echo $url; ?>/records/pack/TKTII/" class="rp_buttxt" >TKT ep II</a><br/>
+            <img src="/images/rp_but.gif" width="4" height="6" alt="" class=""/>&nbsp;<a href="<?php echo $url; ?>/records/pack/TKTII/" class="rp_buttxt" >TKT ep II</a>&nbsp;
+            <img src="/images/rp_but.gif" width="4" height="6" alt="" class=""/>&nbsp;<a href="https://elma.online/levels/packs/TKTIII" class="rp_buttxt" >TKT ep III</a><br/>
 			<img src="/images/rp_but.gif" width="4" height="6" alt="" class="rp_but"/><a href="<?php echo $url; ?>/records/pack/DCup03/" class="rp_buttxt2">Dragstrup Cup 2003</a><br/>
 			<img src="/images/rp_but.gif" width="4" height="6" alt="" class="rp_but"/><a href="<?php echo $url; ?>/records/pack/C1337/" class="rp_buttxt2">1337 Contest</a><br/>
 			<img src="/images/rp_but.gif" width="4" height="6" alt="" class="rp_but"/><a href="<?php echo $url; ?>/records/pack/cEp/" class="rp_buttxt2">cEp levels</a>
