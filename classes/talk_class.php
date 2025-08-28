@@ -22,7 +22,7 @@ class Talk{
 	var $layout;
 	var $limit;
 
-	function Talk(){ // constructor
+	function __construct(){ // constructor
 		$this->bigsmall = "small";
 		$this->size = "20";
 		$this->type = "chat";

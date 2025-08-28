@@ -24,7 +24,7 @@ class EOLAPI{
 	var $eoltime; // the time you wanna search for
 	
 
-	function EOLAPI(){ // constructor
+	function __construct(){ // constructor
 		$this->verified = false;
 		$this->url = "http://elmaonline.net/rss/?makerss=1&levelid=";
 		$this->bestall = "all";

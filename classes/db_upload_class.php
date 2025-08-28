@@ -3,7 +3,7 @@
 require_once("db_class.php");
 class Upload extends Database{
 
-    function Upload(){
+    function __construct(){
         $this->tablename       = 'upload';
         $this->dbname          = 'kopasite';
         $this->fieldlist       = array('UploadIndex', 'KuskiIndex', 'Privacy', 'Duration', 'Duplicate', 'Filename', 'Filetype', 'FileData', 'DateTime');

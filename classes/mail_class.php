@@ -10,7 +10,7 @@ class Email{
 	var $frommail;
 	var $wrap;
 
-	function Email(){ // constructor
+	function __construct(){ // constructor
 		$this->wrap = 70;
 	}
 

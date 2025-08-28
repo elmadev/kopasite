@@ -15,7 +15,7 @@ class Database{
 	var $orderby;
 	var $limit;
 
-	function Database(){ // constructor
+	function __construct(){ // constructor
 		$this->tablename       = 'default';
 		$this->dbname          = 'default';
 

@@ -9,7 +9,7 @@ class Times extends DBtime{
 	var $bestall;
 	var $fields;
 
-	function Times(){ // constructor
+	function __construct(){ // constructor
 		$this->bestall = "best";
 	}
 

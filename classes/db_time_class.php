@@ -3,7 +3,7 @@
 require_once("db_class.php");
 class DBtime extends Database{
 
-    function DBtimes(){
+    function __construct(){
         $this->tablename       = 'besttime';
         $this->dbname          = 'kopasite';
         $this->fieldlist       = array('BesttimeIndex', 'TimeIndex', 'KuskiIndex', 'LevelIndex', 'Time', 'Apples', 'Driven');

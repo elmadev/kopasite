@@ -77,6 +77,23 @@ function mysql_insert_id() {
 	}
 	return mysqli_insert_id($GLOBALS["SQLI"]);
 }
+function mysql_connect($host, $username, $password, $new_link = false, $client_flags = 0) {
+    return $GLOBALS["SQLI"];
+}
+
+function mysql_select_db($database_name, $link_identifier = null) {
+    if ($link_identifier === null) {
+        $link_identifier = $GLOBALS["SQLI"];
+    }
+    return mysqli_select_db($link_identifier, $database_name);
+}
+
+function mysql_real_escape_string($unescaped_string, $link_identifier = null) {
+    if ($link_identifier === null) {
+        $link_identifier = $GLOBALS["SQLI"];
+    }
+    return mysqli_real_escape_string($link_identifier, $unescaped_string);
+}
 
 ///// ****
 //            Login and Register
@@ -128,20 +145,7 @@ function hax( $value ){
 	if($value == NULL){
 		return NULL;
 	}else{
-		if( get_magic_quotes_gpc() )
-		{
-			  $value = stripslashes( $value );
-		}
-		//check if this function exists
-		if( function_exists( "mysql_real_escape_string" ) )
-		{
-			  $value = mysql_real_escape_string( $value );
-		}
-		//for PHP version < 4.3.0 use addslashes
-		else
-		{
-			  $value = addslashes( $value );
-		}
+		$value = addslashes($value);
 		return $value;
 	}
 }

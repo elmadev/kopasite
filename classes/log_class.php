@@ -2,7 +2,7 @@
 
 class Logging{
 
-	function Logging(){ // constructor
+	function __construct(){ // constructor
 		$ip = hax($_SERVER['REMOTE_ADDR']);
 		$referer = hax($_SERVER['HTTP_REFERER']);
 		$browser = hax($_SERVER['HTTP_USER_AGENT']);

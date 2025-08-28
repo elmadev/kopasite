@@ -3,7 +3,7 @@
 require_once("db_class.php");
 class Levelpack extends Database{
 
-    function Levelpack(){
+    function __construct(){
         $this->tablename       = 'levelpack';
         $this->dbname          = 'kopasite';
         $this->fieldlist       = array('LevelPackIndex', 'KuskiIndex', 'PackName', 'LongName', 'Description', 'Secret', 'Amount');

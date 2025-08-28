@@ -3,7 +3,7 @@
 require_once("db_class.php");
 class Comment extends Database{
 
-    function Comment(){
+   function __construct(){
         $this->tablename       = 'comment';
         $this->dbname          = 'kopasite';
         $this->fieldlist       = array('CommentIndex', 'KuskiIndex', 'LevelIndex', 'LevelPackIndex', 'KuskiCommentIndex', 'Datetime', 'Comment', 'Private');

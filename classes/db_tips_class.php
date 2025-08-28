@@ -3,7 +3,7 @@
 require_once("db_class.php");
 class Tips extends Database{
 
-    function Tips(){
+    function __construct(){
         $this->tablename       = 'tips';
         $this->dbname          = 'kopasite';
         $this->fieldlist       = array('TipsIndex', 'Name', 'Text', 'Link', 'Priority');
